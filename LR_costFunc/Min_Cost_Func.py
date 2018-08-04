@@ -1,23 +1,14 @@
 import tensorflow as tf
-import matplotlib.pyplit as plt
 
-X = [1, 2, 3]
-Y = [1, 2, 3]
+x_data = [1, 2, 3]
+y_data = [1, 2, 3]
 
-W = tf.placeholder(tf.float32)
-hypothesis = W * X
+W = tf.Variable(tf.random_normal([1]), name='weight')
+X = tf.placeholder(tf.float32)
+Y = tf.placeholder(tf.float32)
 
-cost = tf.reduce_mean(tf.square(hypothesis - Y))
-sess = tf.Session()
+hypo = W * X
+cost = tf.reduce_mean(tf.square(hypo = Y))
 
-W_val = []
-cost_val = []
-
-for i in range(-30, 50):
-    feed_W = i * 0.1
-    curr_cost, curr_W = sess.run([cost, W], feed_dict={W: feed_W})
-    W_val.append(curr_W)
-    cost_val.append(curr_cost)
-
-
-
+learning_rate = 0.1
+gradient = tf.reduce_mean((W * X - Y) * X)
