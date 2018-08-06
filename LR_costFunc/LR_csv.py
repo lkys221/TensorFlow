@@ -29,3 +29,8 @@ for step in range(2001):
 
 print("Your score will be ", sess.run(
     hypothesis, feed_dict={X: [[100, 70, 101]]}))
+
+# train batch, shuffle batch
+# train batch, shuffle batch
+# train batch, shuffle batch
+# train batch, shuffle batch
