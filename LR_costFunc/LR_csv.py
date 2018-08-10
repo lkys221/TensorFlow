@@ -33,4 +33,3 @@ print("Your score will be ", sess.run(
 # train batch, shuffle batch
 # train batch, shuffle batch
 # train batch, shuffle batch
-# train batch, shuffle batch
