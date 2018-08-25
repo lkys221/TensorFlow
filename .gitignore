@@ -7,6 +7,20 @@
 .idea/**/dictionaries
 .idea/**/shelf
 
+.ipynb_checkpoints
+.idea
+__pycache__
+*.pyc
+.DS_Store
+klab*.png
+MNIST_data
+tb
+Untitled*.ipynb
+.ropeproject
+xlab*
+logs
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
